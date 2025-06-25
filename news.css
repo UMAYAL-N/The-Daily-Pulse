@@ -1,0 +1,261 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    padding: 10px;
+    text-align: center;
+    background-color: lightgray;
+    color: White;
+}
+
+.navbar ul {
+    margin: 10px;
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 20px;
+    cursor: pointer;
+    font-size: large;
+    color: white;
+}
+
+.navbar ul li:hover {
+    color: rgb(159, 158, 158);
+}
+
+.navbar ul li.active {
+    color: rgb(61, 59, 59);
+}
+
+.navbar ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: inherit;
+}
+
+
+#categories {
+
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#categories ul {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+#categories ul li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+#categories ul li button {
+    background-color: lightgray;
+    color: rgb(78, 78, 78);
+    border: none;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+}
+
+.search {
+    margin: 5px 10px 20px 10px;
+}
+
+.search input {
+    width: 68%;
+    margin: 5px 16px 5px 110px;
+    padding: 10px;
+}
+
+.search button {
+    width: 10%;
+    padding: 10px;
+    background-color: lightgray;
+    color: rgb(78, 78, 78);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.search input:focus {
+    border: 2px solid rgb(175, 175, 175);
+    background-color: lightgrey;
+    outline: none;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container div {
+    width: 27%;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightgray;
+    color: rgb(78, 76, 76);
+    position: relative;
+}
+
+.readmore {
+    position:absolute;
+    bottom:2px;
+    right:2px;
+} 
+
+.container div>* {
+    margin: 10px;
+}
+
+.container div img {
+    width: 95%;
+    height: 40%;
+    text-align: center;
+}
+
+.container div h3 {
+    color: rgb(39, 39, 39);
+}
+
+.container div h4 {
+    text-align: right;
+}
+
+.container div h5 {
+    text-align: left;
+}
+
+.container div p {
+    text-align: center;
+}
+
+.container div p a {
+    text-decoration: none;
+}
+
+#aboutus {
+    background-color: lightgrey;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#aboutus h3,
+h2,
+h4 {
+    margin-bottom: 10px;
+}
+
+.query {
+
+    padding: 20px;
+    text-align: center;
+    background-color: lightgrey;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.query form {
+    margin: 10px;
+
+}
+
+.query form table {
+    margin: auto;
+    /* centers the table */
+}
+
+.query table tr {
+    text-align: center;
+}
+
+.query form table td {
+    padding: 3px;
+    font-size: medium;
+}
+
+.query form table td input,
+.query form table td textarea {
+    width: 250px;
+    /* consistent sizing */
+    padding: 1px;
+}
+
+.query form table td[colspan="2"] button {
+    width: 100%;
+    padding: 2px;
+    font-size: 1rem;
+    color: rgb(72, 71, 71);
+    background-color: white;
+    border: rgb(72, 71, 71) solid 1px;
+}
+
+.query form table td input:focus,
+.query form table td textarea:focus,
+.query form table td button:focus {
+    border: 2px solid rgb(72, 71, 71);
+    background-color: rgb(246, 245, 245);
+    outline: none;
+}
+
+.query form table td input::placeholder,
+.query form table td textarea::placeholder {
+    color: grey;
+}
+
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark .navbar {
+    background-color: #333;
+}
+
+
+.dark #categories button {
+    background-color: #222;
+    color: white;
+}
+
+.dark .search input,
+.dark .search button {
+    background-color: #222;
+    color: white;
+    border: none;
+}
+
+.dark .container div {
+    background-color: #222;
+    ;
+    color: white;
+}
+
+.dark .container div h3 {
+    color: rgb(198, 201, 203);
+}
+
+.dark #aboutus,
+.dark .query {
+    background-color: #222;
+    ;
+    color: white;
+}

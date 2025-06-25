@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="icon" href="newspaper-icon.webp">
+    <link rel="stylesheet" href="news.css">
+</head>
+
+<body>
+    <div class="navbar" id="home">
+        <h1>The Daily Pulse</h1>
+        <h2>Your NewsTrack for Everything Current</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#query">Queries</a></li>
+            <li class="changemode">Change Mode</li>
+        </ul>
+    </div>
+    <div id="categories">
+        <ul>
+            <li><button id="trending" onclick="getNews('trending')">Trending</button></li>
+            <li><button id="business" onclick="getNews('business')">Business</button></li>
+            <li><button id="technology" onclick="getNews('technology')">Technology</button></li>
+            <li><button id="health" onclick="getNews('health')">Health</button></li>
+            <li><button id="sports" onclick="getNews('sports')">Sports</button></li>
+        </ul>
+    </div>
+
+    <div class="search">
+        <input class="input" placeholder="Search">
+        <button onclick="searchNews()">Search</button>
+    </div>
+
+    <div class="container">
+    </div>
+    <div id="aboutus">
+        <h2>About Us</h2>
+        <h4> At The Daily Pulse we believe in delivering news that matters — fast, factual, and free from noise. Our mission is to keep you informed with accurate, unbiased, and timely updates from around the world, across categories like politics, technology, business, health, sports, entertainment, and more.
+
+We are a team of passionate writers, editors, and developers committed to bringing you a reliable news experience — whether you're on your morning commute or a midnight scroll.</h4>
+
+<h3>Stay informed. Stay ahead.</h3>
+    </div>
+    <div class="query" id="query">
+        <h2>Queries</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input placeholder="enter name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="enter email"></td>
+                </tr>
+                <tr>
+                    <td>Feedback/Queries</td>
+                    <td><textarea placeholder="Type your feedback/Queries here"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="news.js"></script>
+</body>
+
+</html>
